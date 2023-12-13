@@ -1,17 +1,70 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>JavaScript 310B Final Project</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="stopwatch.css" />
+  </head>
 
-<head>
-  <title>JavaScript 310B Final Project</title>
-</head>
+  <body>
+    <div class="container">
+      <h1>Stopwatch</h1>
+      <br>
+      <h2 id="time"></h2>
+      <br>
+      <form id="connect-form" action="">
+        <div class="form-group">
+          <label for="minute">Minute(s)</label>
+          <input
+            id="minute"
+            class="form-control validate-input"
+            type="text"
+            name="minute"
+            minlength="1"
+          />
+          <small class="error" aria-live="polite"></small>
+        </div>
 
-<body>
-  <h1></h1>
-  <h2></h2>
-  <code>CTRL SHIFT i</code>
-  <h2>or Mac</h2>
-  <code>CMD SHIFT i</code>
+        <div class="form-group">
+          <label for="second">Second(s)</label>
+          <input
+            id="second"
+            class="form-control validate-input"
+            type="text"
+            name="second"
+            minlength="1"
+          />
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+
+        <div class="form-group">
+          <input class="btn btn-primary" type="submit" value="Validate" />
+        </div>
+        <!-- <div class="form-group">
+          <input class="btn btn-primary" type="submit" value="Start" />
+        </div> -->
+        <!-- <div class="form-group">
+          <input class="btn btn-primary" type="submit" value="Reset" />
+        </div> -->
+        <div class="form-group">
+          <button id="startBtn">Start</button>
+        </div>
+        <div class="form-group">
+          <button id="stopBtn">Stop</button>
+        </div>
+      </form>
+    </div>
+
+  
+  </body>
   <script src="stopwatch.js"></script>
-</body>
-
 </html>
+
+
+

@@ -1,2 +1,16 @@
 /*Donna Quach, JavaScript 310B, Autumn 2023*/
 /*Final Project - Stopwatch*/
+
+
+.invalid {
+    border: 1 px solid red;
+    background-color:  #d25761;
+}
+
+input:invalid {
+    background-image: linear-gradient(to left, #d25761, pink);
+}
+
+input:valid {
+    border: 1px solid #238723;
+}
